@@ -2,7 +2,7 @@ echo "List of existing branches "
 git branch 
 echo -n "Enter branch name > "
 read BRANCH_NAME
-git pull origin $BRANCH_NAME
+#git pull origin $BRANCH_NAME
 git add -A .
 echo -n "Enter comment > "
 read COMMENT
