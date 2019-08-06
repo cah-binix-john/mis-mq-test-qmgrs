@@ -1,4 +1,4 @@
-# version 1.1
+# version 1.2
 FROM gcr.io/ent-intg-svcs-np-cah/cah-ibmmq-v9110:v1.0.2-201907120934
 #FROM mq
 COPY *.mqsc /etc/mqm/
