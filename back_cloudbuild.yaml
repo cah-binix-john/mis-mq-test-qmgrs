@@ -4,9 +4,9 @@ steps:
   args:
   - build
   - --build-arg 
-  - app=$APP_NAME/
+  - app=$REPO_NAME/
   - -t
-  - gcr.io/$PROJECT_ID/$APP_NAME:$TAG_NAME
+  - gcr.io/$PROJECT_ID/$REPO_NAME:$TAG_NAME
   - .
 
 timeout: 3600s
