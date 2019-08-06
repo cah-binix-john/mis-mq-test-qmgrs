@@ -1,0 +1,23 @@
+*************************************************            
+***   Reviewer   : Binix John                 
+***   Review date: 02/04/2019           
+***   QMgr name  : Test queues            
+*************************************************
+*** Common queues
+DEFINE QREMOTE('BRK.CEF.PURGE.BOQ') +
+       LIKE('INFRA.TEMPLATE.REMOTE.GM1') +
+       RNAME('BRK.CEF.PURGE.BOQ') +
+       DESCR('Remote queue for purge BOQ') +
+       REPLACE
+***
+DEFINE QREMOTE('BRK.COMMON.L.GENERIC.LOGGER') +
+       LIKE('INFRA.TEMPLATE.REMOTE.GM1') +
+       RNAME('BRK.COMMON.L.GENERIC.LOGGER') +
+       DESCR('Remote queue for generic logger') +
+       REPLACE
+***
+DEFINE QREMOTE('BRK.CEF.EXCEPTION.PROCESSOR') +
+       LIKE('INFRA.TEMPLATE.REMOTE.GM1') +
+       RNAME('BRK.CEF.EXCEPTION.PROCESSOR') +
+       DESCR('Remote queue for exception processor') +
+       REPLACE

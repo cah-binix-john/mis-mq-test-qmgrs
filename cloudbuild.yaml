@@ -1,0 +1,14 @@
+steps:
+- name: gcr.io/cloud-builders/docker
+  id: Build docker image
+  args:
+  - build
+  - --build-arg 
+  - app=$REPO_NAME/
+  - -t
+  - gcr.io/$PROJECT_ID/$REPO_NAME:$TAG_NAME
+  - .
+
+timeout: 3600s
+images: ['gcr.io/$PROJECT_ID/$REPO_NAME:$TAG_NAME']
+logsBucket: 'gs://ent-intg-svcs-np-cah-cloudbuild'
